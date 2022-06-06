@@ -1,18 +1,18 @@
 /* eslint-disable no-unreachable */
 import React from "react";
-import "boxicons";
 
 function Hero() {
 	interface SocialProps {
 		url: string;
 		logo: string;
+		skew: string;
 	}
 
-	function Social({ url, logo }: SocialProps) {
+	function Social({ url, logo, skew }: SocialProps) {
 		return (
-			<div className="flex flex-row flex-nowrap place-content-center items-center h-20 w-20 rounded-full bg-amber-50">
-				<a href={url}>
-					<box-icon type="logo" name={logo}></box-icon>
+			<div className={skew}>
+				<a href={url} className="grid grid-cols-1 place-items-center">
+					<i className={logo}></i>
 				</a>
 			</div>
 		);
@@ -21,31 +21,37 @@ function Hero() {
 	return (
 		<div
 			id="shirt"
-			className="flex flex-row flex-wrap md:flex-nowrap box-border min-h-screen font-sans text-lg bg-gradient-to-b from-blue-400 to-blue-600 justify-around"
+			className="flex flex-row flex-wrap lg:flex-nowrap box-border min-h-screen font-sans text-lg bg-gradient-to-b from-blue-400 to-blue-600 justify-around "
 		>
 			<div
 				id="nametag"
-				className="h-52 w-96 z-30 bg-red-600 rounded-lg text-amber-50 my-40 mx-18"
+				className="flex-initial h-52 w-96 z-30 bg-red-600 rounded-lg text-amber-50 my-40 mx-18  shadow-md shadow-slate-600/75 scale-125 origin-top-right -rotate-6"
 			>
-				<h3 className="z-40 text-center">Hi, My Name Is...</h3>
+				<h3 className="z-40 text-center ">Hi, My Name Is...</h3>
 				<div id="textbox" className="h-3/4 z-50 bg-amber-50">
-					<h2 className="z-60 text-black font-scrawl font-medium text-9xl text-center">
+					<h2 className="z-60 text-black font-scrawl font-medium text-9xl text-center  scale-125">
 						Kat
 					</h2>
 				</div>
 			</div>
 			<div
 				id="pocket"
-				className="flex flex-row flex-nowrap h-52 w-96 z-30 my-40 mx-32"
+				className="flex-initial flex flex-row flex-nowrap h-3/4 w-1/4 z-30 my-40 mx-18 place-items-center justify-around"
 			>
 				<Social
-					url="www.linkedin.com/in/kathleen-metcalf-07b875187"
-					logo="'linkedin-square'"
+					url="https://www.linkedin.com/in/kathleen-metcalf-07b875187"
+					logo="bx bxl-linkedin-square bx-lg bx-tada-hover text-blue-700 scale-110"
+					skew="flex-none grid grid-cols-1 place-items-center h-20 w-20 rounded-full bg-amber-50 shadow-2xl shadow-blue-900 -rotate-12  bg-gradient-to-b from-amber-50 to-stone-300"
 				/>
-				<Social url="https://github.com/kemetcalf" logo="" />
+				<Social
+					url="https://github.com/kemetcalf"
+					logo="bx bxl-github bx-lg bx-tada-hover text-fuchsia-700 scale-150"
+					skew="flex-none grid grid-cols-1 place-items-center h-28 w-28 rounded-full bg-amber-50 shadow-2xl shadow-blue-900 origin-top-left rotate-12  bg-gradient-to-b from-amber-50 via-stone-100 to-stone-400/75"
+				/>
 				<Social
 					url="https://app.netlify.com/teams/kemetcalf/overview"
-					logo=""
+					logo="bx bxl-netlify bx-lg bx-tada-hover text-sky-400 scale-150"
+					skew="flex-none grid grid-cols-1 place-items-center h-24 w-24 rounded-full bg-amber-50  shadow-2xl shadow-blue-900 origin-bottom-left -rotate-12 bg-gradient-to-b from-amber-50 via-stone-100 to-stone-300"
 				/>
 			</div>
 		</div>

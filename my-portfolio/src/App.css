@@ -2,3 +2,8 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+i:hover {
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+
