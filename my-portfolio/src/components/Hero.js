@@ -2,13 +2,9 @@
 import React from "react";
 
 function Hero() {
-	interface SocialProps {
-		url: string;
-		logo: string;
-		skew: string;
-	}
 
-	function Social({ url, logo, skew }: SocialProps) {
+
+	function Social({ url, logo, skew }) {
 		return (
 			<div className={skew}>
 				<a href={url} className="grid grid-cols-1 place-items-center">
