@@ -1,10 +1,7 @@
-
-import './App.css';
+import "./App.css";
 // import { useEffect } from 'react';
 import Hero from "./components/Hero";
-import About from './components/About';
 
-  
 // interface ContentProps {
 //   text: string;
 // }
@@ -14,12 +11,11 @@ import About from './components/About';
 // }
 
 function App() {
-  return (
-    <div className="App">
-      <Hero />
-      <About />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Hero />
+		</div>
+	);
 }
 
 export default App;
