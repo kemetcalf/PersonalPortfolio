@@ -1,5 +1,3 @@
-import React from "react";
-
 function About() {
 	return (
 		<div className="box-border items-center max-h-min flex flex-row">
@@ -19,22 +17,32 @@ function About() {
 						<div className="font-scrawl text-4xl"></div>
 						<h2 className="text-gray-700 font-bold">Kathleen Metcalf</h2>
 
-						<div className="text-gray-500 mt-4">
-							{" "}
+						<div className="text-gray-500 mt-2">
 							<h3>Frontend Developer</h3>
 							<h4>Contact Info</h4>
-							<div className="contact-details">
-								<p>kemetcalf3.14@gmail.com</p>
+							<div className="contact-details pl-4">
+								<p>kat@katmetcalf.com</p>
 								<p>
-									<a href="www.linkedin.com/in/kathleen-metcalf-07b875187">
+									<a
+										href="www.linkedin.com/in/kathleen-metcalf-07b875187"
+										className="text-blue-700"
+									>
 										LinkedIn
 									</a>
 								</p>
 								<p>
-									<a href="https://github.com/kemetcalf">GitHub</a>
+									<a
+										href="https://github.com/kemetcalf"
+										className="text-fuchsia-700"
+									>
+										GitHub
+									</a>
 								</p>
 								<p>
-									<a href="https://app.netlify.com/teams/kemetcalf/overview">
+									<a
+										href="https://app.netlify.com/teams/kemetcalf/overview"
+										className="text-sky-400"
+									>
 										Netlify
 									</a>
 								</p>

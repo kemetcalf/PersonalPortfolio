@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply min-h-screen w-full bg-origin-border bg-cover bg-gradient-to-b from-blue-400 to-blue-600;
+  }
+  
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,4 +21,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+i:hover {
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+
 
