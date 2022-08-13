@@ -54,7 +54,7 @@ function Hero() {
 						/>
 					</div>
 				</div>
-				<div className="biz-card-wrapper flex flex-row justify-center">
+				<div className="biz-card-wrapper flex flex-row">
 					<About className="" />
 				</div>
 			</div>

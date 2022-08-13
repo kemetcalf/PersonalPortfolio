@@ -1,19 +1,24 @@
+import React from "react";
+import harborHeadshot from "..//assets/harborHeadshot.jpg";
+
 function About() {
+	console.log(harborHeadshot);
 	return (
-		<div className="box-border items-center max-h-min flex flex-row">
+		<div className="box-border items-center max-h-max flex mt-5 ml-16">
 			{/* <!-- Card 1 --> */}
-			<card className="box-border bg-white border-gray-200 border-2 rounded-xl py-7 px-5 shadow-lg shadow-slate-600/75 origin-top-right rotate-6">
-				<div className="grid grid-cols-6 grid-rows-1 min-w-max">
+			<div className="box-border bg-white border-gray-200 border-2 rounded-xl py-7 pl-5 pr-8 shadow-lg shadow-slate-600/75 origin-top-right rotate-6">
+				<div className="grid grid-row grid-cols-4 grid-flow-row gap-4 ">
 					{/* <!-- Image --> */}
-					<div className="col-span-2">
+					<div className="smol-box place-self-center col-span-2 rounded-full overflow-hidden w-36 h-36 border-4 border-lime-300">
 						<img
-							src="https://events.duolingo.com/images/why_global.svg"
-							alt="some img"
+							src={harborHeadshot}
+							alt="pale woman with hair up"
+							className="object-cover object-bottom scale-125 translate-y-4 rounded-full text-xs whitespace-normal"
 						/>
 					</div>
 
 					{/* <!-- Description --> */}
-					<div className="col-span-4 ">
+					<div className="col-start-3 col-end-6">
 						<div className="font-scrawl text-4xl"></div>
 						<h2 className="text-gray-700 font-bold">Kathleen Metcalf</h2>
 
@@ -24,7 +29,7 @@ function About() {
 								<p>kat@katmetcalf.com</p>
 								<p>
 									<a
-										href="www.linkedin.com/in/kathleen-metcalf-07b875187"
+										href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
 										className="text-blue-700"
 									>
 										LinkedIn
@@ -50,7 +55,7 @@ function About() {
 						</div>
 					</div>
 				</div>
-			</card>
+			</div>
 		</div>
 	);
 }
