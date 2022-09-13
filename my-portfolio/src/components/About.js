@@ -1,8 +1,8 @@
 import React from "react";
-import harborHeadshot from "..//assets/harborHeadshot.jpg";
+import harborHeadshotResized from "..//assets/harborHeadshotResized.avif";
 
 function About() {
-	console.log(harborHeadshot);
+	console.log(harborHeadshotResized);
 	return (
 		<div className="box-border items-center max-h-max flex mt-5 ml-16">
 			{/* <!-- Card 1 --> */}
@@ -11,7 +11,7 @@ function About() {
 					{/* <!-- Image --> */}
 					<div className="smol-box place-self-center col-span-2 rounded-full overflow-hidden w-36 h-36 border-4 border-lime-300">
 						<img
-							src={harborHeadshot}
+							src={harborHeadshotResized}
 							alt="pale woman with hair up"
 							className="object-cover object-bottom scale-125 translate-y-4 rounded-full text-xs whitespace-normal"
 						/>
@@ -20,9 +20,9 @@ function About() {
 					{/* <!-- Description --> */}
 					<div className="col-start-3 col-end-6">
 						<div className="font-scrawl text-4xl"></div>
-						<h2 className="text-gray-700 font-bold">Kathleen Metcalf</h2>
+						<h2 className="text-gray-800 font-bold">Kathleen Metcalf</h2>
 
-						<div className="text-gray-500 mt-2">
+						<div className="text-gray-700 mt-2">
 							<h3>Frontend Developer</h3>
 							<h4>Contact Info</h4>
 							<div className="contact-details pl-4">
@@ -46,7 +46,7 @@ function About() {
 								<p>
 									<a
 										href="https://app.netlify.com/teams/kemetcalf/overview"
-										className="text-sky-400"
+										className="text-sky-600"
 									>
 										Netlify
 									</a>

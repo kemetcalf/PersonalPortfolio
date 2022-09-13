@@ -38,16 +38,19 @@ function Hero() {
 						className="flex-initial flex flex-row flex-nowrap h-3/4 w-1/4 z-30 place-items-center justify-around origin-top-right rotate-6"
 					>
 						<Social
+							alt="blue linked LinkedIn logo"
 							url="https://www.linkedin.com/in/kathleen-metcalf-07b875187"
 							logo="bx bxl-linkedin-square bx-lg will-change-auto ease-in duration-300 bx-tada-hover text-blue-700 scale-110"
 							skew="flex-none grid grid-cols-1 place-items-center h-20 w-20 rounded-full bg-white shadow-2xl shadow-blue-900 -rotate-12  bg-gradient-to-b from-white via-gray-50 to-gray-300"
 						/>
 						<Social
+							alt="purple linked GitHub logo"
 							url="https://github.com/kemetcalf"
 							logo="bx bxl-github bx-lg will-change-auto ease-in duration-500 bx-tada-hover text-fuchsia-700 scale-150"
 							skew="flex-none grid grid-cols-1 place-items-center h-28 w-28 rounded-full bg-white shadow-2xl shadow-blue-900 origin-top-left rotate-12  bg-gradient-to-b from-white via-gray-50 to-gray-300"
 						/>
 						<Social
+							alt="light blue linked Netlify logo"
 							url="https://app.netlify.com/teams/kemetcalf/overview"
 							logo="bx bxl-netlify bx-lg will-change-auto ease-in duration-300 bx-tada-hover text-sky-400 scale-150"
 							skew="flex-none grid grid-cols-1 place-items-center h-24 w-24 rounded-full bg-white  shadow-2xl shadow-blue-900 origin-bottom-left -rotate-12 bg-gradient-to-b from-white via-gray-50 to-gray-300"
